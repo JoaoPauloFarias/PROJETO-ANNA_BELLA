@@ -1,0 +1,247 @@
+@charset "utf-8";
+
+/* Layout */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+  overflow-x: hidden;
+}
+
+body{
+    background: white;
+}
+
+
+/* Barra de navegação */
+.navbar{
+    border-bottom: 3px solid #888873;
+}
+
+.navbar-dark .navbar-brand {
+    color: #888873;
+    font-size: 25px;
+    font-family: 'Poppins',sans-serif;
+    font-style: oblique;
+    margin-right: auto;
+}
+
+section{
+  margin-top: 62px;
+}
+
+
+/* Marcador de pagina */
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}  
+
+.navbar-dark{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.navbar-dark a{
+    position: relative;
+    font-family: 'Poppins',sans-serif;
+    color: #a0a0a0;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+}
+
+.navbar-nav a:after{
+    content: "";
+    position: absolute;
+    background-color: #888873;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -2px;
+    transition: 0.5s;
+}
+
+.navbar-dark a:hover{
+    color: #888873;
+}
+
+a:hover:after{
+    width: 100%;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover{
+  color: #888873;
+}
+
+
+/* Linha de divisão de conteúdo */
+section div hr{
+  margin: 0px 5px;
+  border: 1px solid #888873;
+  background: #888873;
+}
+
+section div .linha-campanhas{
+  margin: 30px 5px;
+  border: 1px solid #888873;
+}
+
+
+/* Carousel */
+section div .carousel-caption p{
+  font-size: 25px;
+}
+
+section div .carousel-indicators .active{
+  box-shadow: 2px 1px #363636;
+}
+
+section div .carousel-indicators li{
+  box-shadow: 2px 1px #363636;
+  border-radius: 10px;
+}
+
+
+/* Contato */
+section div .card{
+  border: none;
+}
+
+section div .card p{
+  font-size: 25px;
+}
+
+section div form input{
+  display: block;
+  margin-top: 5px;
+  padding: 10px;
+  border: none;
+  box-shadow: 1px 1px 8px #cacaca;
+  outline: none;
+  border-radius: 5px;
+}
+
+section div textarea{
+  display: block;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  border: none;
+  box-shadow: 1px 1px 8px #cacaca;
+  padding: 5px;
+  height: 90px;
+  outline: none;
+  border-radius: 5px;
+}
+
+section div input::placeholder{
+  font-size: 20px;
+}
+
+section div textarea::placeholder{
+  font-size: 20px;
+}
+
+
+/* Icones das Redes Sociais */
+section div a{
+  font-size: 50px;
+  color: #343A40;
+}
+
+section div a:hover{
+  font-size: 52px;
+  transition: .5s;
+  color: #222222;
+  text-decoration: none;
+}
+
+
+/* Rodapé */
+section footer{
+  padding: 20px 0px 20px 0px;
+	position: relative;
+}
+
+section footer div p{
+  color: white;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+}
+
+section footer div .icones{
+  margin: 0 auto;
+}
+
+section footer div i{
+  color: white;
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+
+/* Tipografia */
+section div h2{
+  font-size: 35px;
+  text-shadow: 2px 2px #888873;
+}
+
+section div .paragrafo{
+  font-size: 20px;
+}
+
+section div .carousel-caption p{
+  color: white;
+  text-shadow: 2px 1px #363636;
+}
+
+section div form input{
+  display: block;
+  margin-bottom: 5px;
+}
+
+section div textarea{
+  display: block;
+  margin-bottom: 5px;
+}
+
+
+/*Responsive*/
+@media (min-width: 700px){
+    section div img{
+        width: 1340px;
+        margin: 0px 5px;
+    }
+    
+    section div .carousel-caption p{
+      margin-bottom: 100px;
+      font-size: 45px;
+    }
+    
+    section div .carousel-indicators li{
+      margin-bottom: 70px;
+      margin-right: 20px;
+      height: 10px;
+      width: 70px;
+    }
+    
+    sectiom div form input{
+      margin: 0 500px;
+    }
+}
+
+@media (min-width: 1380px){
+  section div img{
+      width: 1500px;
+      margin: 0px 5px;
+  }
+}
