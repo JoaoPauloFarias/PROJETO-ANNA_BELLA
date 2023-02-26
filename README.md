@@ -8,6 +8,7 @@ Projeto Anna Bella, desenvolvido durante as aulas do curso de desenvolvimento we
 ---
 
 ## 🎨 Demo
+https://user-images.githubusercontent.com/98693468/221389594-e356f291-aadc-4e90-b3dc-f0efaf15be8d.mp4
 
 ---
 
